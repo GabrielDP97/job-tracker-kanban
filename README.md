@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+# Job Tracker Kanban
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web tipo **Job Tracker** con tablero **Kan🇮 Kanban** para organizar y hacer seguimiento de procesos de selección de empleo.
 
-Currently, two official plugins are available:
+Proyecto desarrollado con **React + TypeScript**, enfocado en el aprendizaje práctico de herramientas modernas de frontend y buenas prácticas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Demo online:**  
+https://job-tracker-kanban.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Funcionalidades
 
-## Expanding the ESLint configuration
+- 🔐 Login “fake” (persistencia en `localStorage`)
+- 📋 CRUD de ofertas de trabajo
+- 🧱 Tablero Kanban con estados:
+  - Applied
+  - Interview
+  - Offer
+  - Rejected
+- 🔄 Mover ofertas entre columnas
+- 🔍 Filtros por estado y búsqueda por texto
+- 💾 Persistencia de datos en `localStorage`
+- 🎨 UI moderna y responsive con Tailwind CSS
+- 🧪 Tests básicos con Vitest y Testing Library
+- 🚀 Deploy automático en Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Stack tecnológico
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React** + **TypeScript**
+- **Vite**
+- **React Router**
+- **Zustand** (estado global)
+- **Tailwind CSS**
+- **Vitest** + **@testing-library/react**
+- **Vercel** (deploy)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧠 Qué se ha aprendido con este proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este proyecto se ha desarrollado con un enfoque **educativo y progresivo**, poniendo especial atención en:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Estructuración de un proyecto frontend real
+- Gestión de estado global con Zustand
+- Routing en aplicaciones SPA
+- Persistencia de datos en el navegador
+- Estilado rápido y consistente con Tailwind
+- Escritura de tests básicos orientados a comportamiento
+- Configuración de tooling moderno (Vite + Vitest)
+- Deploy y configuración para producción (SPA routing)
+
+---
+
+## 🧪 Tests
+
+El proyecto incluye tests básicos que cubren:
+
+- Interacción con el formulario de login
+- Renderizado de columnas Kanban vacías
+- Lógica del store de ofertas
+
+Para ejecutar los tests en local:
+
+```bash
+npm run test
+▶️ Ejecutar el proyecto en local
+Clonar el repositorio:
+
+git clone https://github.com/GabrielDP97/job-tracker-kanban.git
+Instalar dependencias:
+
+npm install
+Ejecutar en desarrollo:
+
+npm run dev
+Abrir en el navegador:
+
+http://localhost:5173
+📌 Posibles mejoras futuras
+Autenticación real
+
+Backend y base de datos
+
+Drag & drop en el Kanban
+
+Validación avanzada de formularios (React Hook Form + Zod)
+
+Tests end-to-end (Playwright / Cypress)
+
+👤 Autor
+Gabriel Delgado Pérez
+Desarrollador Junior Frontend / Backend
+📍 España
+
+GitHub: https://github.com/GabrielDP97
+
+LinkedIn: https://www.linkedin.com/in/angel-gabriel-dp/
