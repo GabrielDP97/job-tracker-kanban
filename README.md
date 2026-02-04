@@ -1,6 +1,6 @@
 # Job Tracker Kanban
 
-Aplicación web tipo **Job Tracker** con tablero **Kan🇮 Kanban** para organizar y hacer seguimiento de procesos de selección de empleo.
+Aplicación web tipo **Job Tracker** con tablero **Kanban** para organizar y hacer seguimiento de procesos de selección de empleo.
 
 Proyecto desarrollado con **React + TypeScript**, enfocado en el aprendizaje práctico de herramientas modernas de frontend y buenas prácticas.
 
