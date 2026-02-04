@@ -1,10 +1,9 @@
+import AppRouter from "./app/router";
+
 function App() {
-  return (
-    <div>
-      <h1>Job Tracker</h1>
-    </div>
-  );
+  return <AppRouter />;
 }
 
 export default App;
+
 
